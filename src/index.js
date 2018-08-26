@@ -103,6 +103,7 @@ window.MediaRecord = (function () {
         this.mediaRecorder.stop();
         videoDom.controls = true;
         this.mediaBoClass.endRecordFlag = true;
+        this.mediaBoClass.startRecordFlag = false;
         return this.mediaBoClass.recodedBlobs;
       }
       }

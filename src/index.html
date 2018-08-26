@@ -7,9 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <video id="myVideo" style="width: 500px;height: 500px;" autoplay></video>
+    <button type="button" id="recordStart">开始录制</button>
+    <button type="button" id="recordStop">暂停录制</button>
+    <button type="button" id="recordPlay">播放录像</button>
 </body>
 <script type="text/javascript">
     console.dir(MediaRecord);
+    let vieoDom = document.getElementById('myVideo');
+    let commonAPI = null;
+
+    MediaRecord.init(vieoDom, (API) => {
+        console.log(API, 'api');
+        commonAPI = API.mediaRecordBiz;
+    });
+
+    let handleStartRecords = () => {
+        console.log(commonAPI, 'commonapi');
+        commonAPI.mediaStartRecord();
+    }
+
+    let handleStopRecord = (vieoDom) => {
+        commonAPI.mediaStopRecord(vieoDom);
+    }
+
+    document.getElementById('recordStart').addEventListener('click', handleStartRecords, false);
+    document.getElementById('recordStop').addEventListener('click', handleStopRecord, false);
+
 </script>
 </html>

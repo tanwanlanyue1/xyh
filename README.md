@@ -1,6 +1,14 @@
 # Media-Record-plugin
 media record user for project.
+webpack plugin to server. so you need to use webpack for open project.
+plase come to webpack course.
 
+### webpack
+```js
+    npm install
+    npm run build
+    npm run dev
+```
 ### use handle 
 ```js
     // init params for neened
@@ -24,5 +32,5 @@ media record user for project.
         commonAPI.mediaStopRecord(videoDom);
     },false);
 
-    
+
 ```

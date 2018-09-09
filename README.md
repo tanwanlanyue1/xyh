@@ -12,6 +12,12 @@ plase come to webpack course.
     npm run dev
 ```
 
+## first you should be `http://localhost` or open server. In the plugin, you can use webpack open the localhost. default host `9090`, if your host is common, you can change the host use of `webpack.config.js` in the project
+
+```js
+    npm run dev
+```
+
 ## use plugin handle
 
 ```js

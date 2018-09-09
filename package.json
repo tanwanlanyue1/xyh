@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode development",
+    "p": "webpack --mode production",
     "dev": "webpack-dev-server --open --mode development",
     "test": "karma start karma.config.js"
   },

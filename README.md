@@ -1,21 +1,25 @@
 # Media-Record-plugin
+
 media record user for project.
 webpack plugin to server. so you need to use webpack for open project.
 plase come to webpack course.
 
-### webpack
+## use webpack
+
 ```js
     npm install
     npm run build
     npm run dev
 ```
-### use handle 
+
+## use plugin handle
+
 ```js
     // init params for neened
     let commonAPI = null;
     let videoDom = document.getElementById('myVideo');
 
-    // init MediaRecord 
+    // init MediaRecord
      MediaRecord.init(vieoDom, (API) => {
         commonAPI = API.mediaRecordBiz;
     });
@@ -32,5 +36,8 @@ plase come to webpack course.
         commonAPI.mediaStopRecord(videoDom);
     },false);
 
-
 ```
+
+### use test model
+
+support test to run model for about offer API. so you can run test file and show result.

@@ -109,6 +109,7 @@ window.MediaRecord = (function () {
       }
    
       mediaPlayRecord (videoDom) {
+        console.log(videoDom, 'videoDom');
         if (this.mediaBoClass.endRecordFlag) {
         this.mediaBoClass.sourceBuffer = new Blob(this.mediaBoClass.recodedBlobs, {type: this.mimeType});
         videoDom.src = window.URL.createObjectURL(this.mediaBoClass.sourceBuffer);
